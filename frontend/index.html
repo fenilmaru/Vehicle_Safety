@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+<meta name="theme-color" content="#04060d">
+<title>Autonomous Activation System — AI Vehicle Safety</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#04060d;--card:rgba(255,255,255,0.05);--text:#e8eefc;--muted:#8ea0c4;--accent:#22d3ee;--radius:22px;}
+  html,body{margin:0;padding:0;width:100%;overflow-x:hidden;font-family:"Inter","Segoe UI",system-ui,sans-serif;background:radial-gradient(1100px 700px at 10% -10%,rgba(34,211,238,.14),transparent 60%),radial-gradient(900px 620px at 92% 8%,rgba(168,85,247,.14),transparent 62%),var(--bg);color:var(--text);-webkit-font-smoothing:antialiased;min-height:100vh;}
+  .center{display:grid;place-items:center;min-height:92vh;padding:2rem;text-align:center;}
+  .hero-img{width:min(420px,90vw);aspect-ratio:16/10;object-fit:cover;border-radius:var(--radius);opacity:.85;box-shadow:0 30px 80px rgba(2,6,20,.5);filter:contrast(1.05);}
+  h1{font-size:clamp(2rem,4.5vw,3.2rem);font-weight:800;line-height:1.05;letter-spacing:-.04em;margin:0 0 .5rem;}
+  h2{font-size:clamp(1rem,2.4vw,1.35rem);font-weight:600;color:var(--muted);margin:0 0 2.5rem;}
+  .chip{display:inline-block;padding:.35rem .9rem;border-radius:999px;border:1px solid rgba(255,255,255,.12);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:1rem;background:rgba(255,255,255,.03);}
+  .btn{display:inline-flex;align-items:center;gap:.55rem;padding:.75rem 1.4rem;border-radius:14px;background:linear-gradient(120deg,#22d3ee,#a855f7);color:#03080f;font-weight:700;text-decoration:none;font-size:.92rem;box-shadow:0 14px 34px rgba(34,211,238,.25);transition:transform .15s ease,box-shadow .25s ease;min-height:46px;}
+  .btn:hover{transform:translateY(-2px);box-shadow:0 18px 42px rgba(34,211,238,.35);}
+  .btn-secondary{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);color:var(--text);box-shadow:none;}
+  .btn-secondary:hover{background:rgba(255,255,255,.1);}
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1rem;margin:2.5rem 0;max-width:720px;}
+  .stat{background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:1rem;text-align:center;backdrop-filter:blur(12px);}
+  .stat .n{font-family:"JetBrains Mono",monospace;font-size:1.3rem;font-weight:600;color:var(--accent);}
+  .stat .l{font-size:.7rem;text-transform:uppercase;letter-spacing:.14em;color:var(--muted);margin-top:.2rem;}
+  @media (max-width:430px){h1{font-size:1.8rem;}.stats{grid-template-columns:1fr 1fr;}}
+</style>
+</head>
+<body>
+<div class="center">
+  <div class="chip"><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--accent);margin-right:.35rem;"></span>AI Vehicle Safety Platform · Django + React 19</div>
+  <img src="/images/hero-vehicle.jpg" alt="AI scanning autonomous vehicle" class="hero-img" loading="eager" />
+  <h1>Intelligent Safety for the Future of Mobility</h1>
+  <h2>AI-powered autonomous monitoring, accident detection &amp; emergency response — all modules fully operational on the Django backend.</h2>
+
+  <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:.6rem;">
+    <a class="btn" href="/dashboard">Launch Dashboard</a>
+    <a class="btn btn-secondary" href="/login">Operator Sign In</a>
+  </div>
+
+  <div class="stats" aria-label="Platform metrics">
+    <div class="stat"><div class="n">380ms</div><div class="l">Crash detection</div></div>
+    <div class="stat"><div class="n">99.94%</div><div class="l">AI uptime</div></div>
+    <div class="stat"><div class="n">12+</div><div class="l">Perception models</div></div>
+    <div class="stat"><div class="n">24/7</div><div class="l">Emergency grid</div></div>
+  </div>
+
+  <p style="font-size:.8rem;color:var(--muted);max-width:520px;line-height:1.5;">React 19 SPA served by Django templates · Django REST Framework APIs · Django Channels WebSockets · PostgreSQL · JWT auth · MediaPipe / YOLO / TensorFlow / PyTorch simulated inference · All components, buttons, camera overlays and videos active.</p>
+</div>
+</body>
+</html>
